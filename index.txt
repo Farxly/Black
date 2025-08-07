@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portofolio Farxly</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="bg"></canvas>
+
+  <audio id="bg-music">
+    <source src="https://files.catbox.moe/k8gbps.mp3" type="audio/mpeg" />
+  </audio>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const audio = document.getElementById('bg-music');
+      audio.volume = 0.4;
+
+      document.getElementById('bg').addEventListener('click', () => {
+        audio.play().catch(() => {});
+      });
+    });
+  </script>
+
+  <nav class="navbar">
+    <button onclick="scrollToSection('profile')">Profil</button>
+    <button onclick="scrollToSection('projects')">Project</button>
+    <button onclick="scrollToSection('services')">Produk</button>
+    <button onclick="scrollToSection('contact')">Kontak</button>
+  </nav>
+
+  <main>
+    <section id="profile" class="section">
+      <img src="https://files.catbox.moe/7s0q1k.jpeg" alt="Foto Farxly" class="profile-pic" />
+      <h1><span class="typing" id="typed-text"></span><span class="cursor">|</span></h1>
+      <p class="dob">Tanggal Lahir: 11 Mei 2011</p>
+      <p class="desc">
+        Saya adalah pengembang teknologi dengan fokus pada pembuatan script otomatis, pengujian sistem, dan pengembangan antarmuka modern.<br><br>
+        Saya memiliki <strong>pengalaman 3 tahun</strong> dalam dunia coding, scripting, dan pengembangan berbagai tool, aplikasi, serta web interaktif.
+      </p>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Project</h2>
+
+      <div class="project">
+        <img src="https://files.catbox.moe/gcd1wo.jpeg" class="project-img" />
+        <h3>Script Bot WhatsApp</h3>
+        <p>Bot WhatsApp dengan perintah otomatis, integrasi API, tombol, dan fitur keamanan anti-spam.</p>
+      </div>
+
+      <div class="project">
+        <img src="https://files.catbox.moe/rwj4gn.jpeg" class="project-img" />
+        <h3>DDoS Tools</h3>
+        <p>Simulasi pengujian ketahanan server melalui tool DDoS edukatif & legal.</p>
+      </div>
+
+      <div class="project">
+        <img src="https://files.catbox.moe/c95u9j.jpeg" class="project-img" />
+        <h3>Game Developer</h3>
+        <p>Pembuatan game berbasis skenario dengan logika kompleks dan kontrol GUI interaktif.</p>
+      </div>
+
+      <div class="project">
+        <h3>Web Portofolio</h3>
+        <p>Website pribadi dengan tampilan interaktif, animasi, musik, dan efek scroll modern.</p>
+      </div>
+
+      <div class="project">
+        <h3>Tool Executor</h3>
+        <p>Tool terminal untuk pengujian script, eksekusi otomatis, dan manipulasi sistem sederhana.</p>
+      </div>
+
+      <div class="project">
+        <h3>Web Prank Breach Style</h3>
+        <p>Website prank menyerupai forum hacker lengkap dengan elemen animasi dan data palsu.</p>
+      </div>
+
+      <div class="project">
+        <h3>Aplikasi Android Crasher</h3>
+        <p>Aplikasi Android dengan key login untuk prank serta simulasi bug phone.</p>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <h2>Produk & Layanan</h2>
+
+      <div class="service">
+        <h3>Bot WhatsApp</h3>
+        <ul>
+          <li>Command otomatis dan pengenalan teks</li>
+          <li>Integrasi tombol, list, API, dan media</li>
+        </ul>
+      </div>
+
+      <div class="service">
+        <h3>Pembuatan Website</h3>
+        <ul>
+          <li>Dark UI modern, responsif di semua perangkat</li>
+          <li>Custom HTML, CSS, JS, atau drag-n-drop</li>
+        </ul>
+      </div>
+
+      <div class="service">
+        <h3>Pengujian Keamanan</h3>
+        <ul>
+          <li>Simulasi DDoS lokal (non-ilegal)</li>
+          <li>Analisis performa server dan rekomendasi</li>
+        </ul>
+      </div>
+
+      <div class="service">
+        <h3>Pembuatan Tools Otomatisasi</h3>
+        <ul>
+          <li>Spam tools, auto clicker, executor sederhana</li>
+          <li>Pengontrol terminal dengan interface efisien</li>
+        </ul>
+      </div>
+
+      <div class="service">
+        <h3>Perbaikan & Debug Web</h3>
+        <ul>
+          <li>Mendeteksi error layout / logika web</li>
+          <li>Perbaikan cepat, efisien dan stabil</li>
+        </ul>
+      </div>
+
+      <div class="service">
+        <h3>Konsultasi Sistem & Script</h3>
+        <ul>
+          <li>Konsultasi pengembangan & troubleshooting</li>
+          <li>Rencana project atau optimasi script</li>
+        </ul>
+      </div>
+
+      <div class="service">
+        <h3>Aplikasi Android</h3>
+        <ul>
+          <li>Pembuatan aplikasi Android dengan UI khusus</li>
+          <li>Simulasi bug, prank, launcher, dan game</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Kontak</h2>
+      <p>Hubungi saya melalui:</p>
+      <div class="wa-buttons">
+        <a href="https://wa.me/62881037400856" class="whatsapp">WhatsApp</a>
+        <a href="mailto:farxlydev@gmail.com" class="email-button">Gmail</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+  <script src="background.js"></script>
+</body>
+</html>
